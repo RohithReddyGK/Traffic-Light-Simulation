@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: azure;
+            padding-top: 50px;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 50px;
+        }
+
+        .traffic-light {
+            width: 100px;
+            margin: 0 auto 30px;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+        }
+
+        .light {
+            width: 60px;
+            height: 60px;
+            margin: 15px auto;
+            border-radius: 50%;
+            border: 3px solid black;
+        }
+
+        .red.active {
+            background-color: red;
+        }
+
+        .yellow.active {
+            background-color: yellow;
+        }
+
+        .green.active {
+            background-color: green;
+        }
+
+        .button1 {
+            margin: 10px;
+            width: 100px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 3px solid black;
+            background-color: red;
+            font-weight: bold;
+        }
+
+        .button2 {
+            margin: 10px;
+            width: 100px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 3px solid black;
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        .button3 {
+            margin: 10px;
+            width: 100px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 3px solid black;
+            background-color: green;
+            font-weight: bold;
+        }
+
+        .button4 {
+            margin-top: 15px;
+            width: 100px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 3px solid black;
+            background-color: blue;
+            font-weight: bold;
+        }
+
+        button:hover {
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <span style="color:red">🚦TRAFFIC</span>
+        <span style="color: yellow">LIGHT</span>
+        <span style="color: green">SIMULATION</span>
+    </h1>
+
+    <div class="traffic-light">
+        <div class="light red" id="redLight"></div>
+        <div class="light yellow" id="yellowLight"></div>
+        <div class="light green" id="greenLight"></div>
+    </div>
+
+    <div>
+        <button onClick="turnOn('red')" class="button1">Red</button>
+        <button onClick="turnOn('yellow')" class="button2">Yellow</button>
+        <button onClick="turnOn('green')" class="button3">Green</button>
+        <div style="text-align: center;">
+            <button onclick="turnOffLights()" class="button4">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        function turnOn(color) {
+            const red = document.getElementById("redLight");
+            const yellow = document.getElementById("yellowLight");
+            const green = document.getElementById("greenLight");
+
+            //Remove active from all.
+            red.classList.remove("active");
+            yellow.classList.remove("active");
+            green.classList.remove("active");
+
+            //Add active to selected.
+            if (color === "red") red.classList.add("active");
+            if (color === "yellow") yellow.classList.add("active");
+            if (color === "green") green.classList.add("active");
+        }
+
+        //Reset Button.
+        function turnOffLights() {
+            document.getElementById('redLight').classList.remove("active");
+            document.getElementById('yellowLight').classList.remove("active");
+            document.getElementById('greenLight').classList.remove("active");
+        }
+    </script>
+</body>
+
+</html>
