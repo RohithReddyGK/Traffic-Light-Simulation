@@ -57,7 +57,7 @@ traffic-light-simulation/
 ## 🖼️ Screenshots
 
 ### Traffic Light Simulation
-<img src="https://github.com/user-attachments/assets/83dc9edf-a3c3-4921-91f3-f98857581d2e" alt="Traffic Light" width="700" height="450"/>
+<img src="https://github.com/user-attachments/assets/83dc9edf-a3c3-4921-91f3-f98857581d2e" alt="Traffic Light" width="800" height="450"/>
 
 ---
 
