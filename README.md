@@ -33,6 +33,7 @@ traffic-light-simulation/
 ├── Images/
 │   └── traffic-light-screenshot.png
 
+---
 
 ## 🖥️ How to Run Locally
 
@@ -62,7 +63,7 @@ traffic-light-simulation/
 ---
 
 ### Netlify Badge
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5f5425c8-a6e7-4ca6-8512-3be05d940372/deploy-status)](https://app.netlify.com/projects/ai-fields-theme-toggle/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4fc945fd-18e5-49cf-9c1a-dab544d184e3/deploy-status)](https://app.netlify.com/projects/signal-sim/deploys)
 
 ---
 
