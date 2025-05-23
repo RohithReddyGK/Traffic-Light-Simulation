@@ -27,11 +27,13 @@ A simple and interactive web-based simulation of a traffic light using **HTML**,
 
 ## 📂 Folder Structure
 
-traffic-light-simulation/
+```
+Traffic Light Simulation/
 ├── index.html
 ├── README.md
 ├── Images/
 │   └── traffic-light-screenshot.png
+```
 
 ---
 
